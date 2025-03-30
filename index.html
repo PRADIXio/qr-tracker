@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Ստանում ենք օգտատիրոջ մասին տվյալներ
+    const userAgent = navigator.userAgent;
+
+    // Այստեղ կտեղադրես ՔՈ Google Apps Script հղումը ⬇
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwrRncNPNFxVL2BzNBkeAMn1Ta7ueF3mu7XjKWMt1gIpzZtEHfRBmgwllJ26XwyKD4ilw/exec";
+
+    // Ստեղծում ենք redirect հղումը՝ պարամետրերով
+    const finalURL = `${scriptURL}?ua=${encodeURIComponent(userAgent)}&ref=qr_github`;
+
+    // Ռեդիրեքտ անում ենք
+    window.location.href = finalURL;
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
